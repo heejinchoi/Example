@@ -58,8 +58,9 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - eclipse 설치 위치 [Specify location..]를 검색해서 'eclipse.exe' 파일을 선택합니다
 - install/update 클릭합니다.
   
+  
 ### DB Table 생성 및 초기 데이터 등록
-  - windows 자동 실행 script는 개발 중입니다.
+	- windows 자동 실행 script는 개발 중입니다.
 	- 데이터베이스 생성합니다.<br>
 	   (Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)
 	- PostgreSQL에서 Extensions를 실시합니다. <br>
