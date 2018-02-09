@@ -58,20 +58,20 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - eclipse 설치 위치 [Specify location..]를 검색해서 'eclipse.exe' 파일을 선택합니다
 - install/update 클릭합니다.
   
-#### DB Table 생성 및 초기 데이터 등록
+### DB Table 생성 및 초기 데이터 등록
   - windows 자동 실행 script는 개발 중입니다.
-	1.데이터베이스 생성합니다.<br>
+	- 데이터베이스 생성합니다.<br>
 	   (Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)
-	2.PostgreSQL에서 Extensions를 실시합니다. <br>
-       <code>  CREATE EXTENSION postgis  </code>
-	3.download 한 소스의 /mago3d-core/src/doc/database 폴더로 이동합니다.
+	- PostgreSQL에서 Extensions를 실시합니다. <br>
+       <code>  CREATE EXTENSION postgis  </code><br>
+	- download 한 소스의 /mago3d-core/src/doc/database 폴더로 이동합니다.
 	   - PostgreSQL에서 database 폴더에 있는 쿼리를 실행해 줍니다.<br>
 	    - ddl 폴더의 sql 파일을 실행하여 table을 생성합니다.<br>
 	    - (table, table column comment 다국어 버전은 개발 중입니다.)<br>
 	    - ddl 폴더의 sequence sql 실행하여 sequence 생성합니다.<br>
 	    - index, trigger 폴더의 sql을 실행하여 index 및 partition 생성합니다.<br>
 	    - dml 폴더의 sql을 실행하여 초기 데이터 등록합니다.
-	4.dbinit.bat 파일을 실행하여 데이터를 초기화 합니다.<br>
+	- dbinit.bat 파일을 실행하여 데이터를 초기화 합니다.<br>
 	   (경로 예시: C:\git\repository\mago3d\mago3d-core\src\doc\database)
 	
   - 데이터 링크
