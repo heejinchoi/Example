@@ -59,30 +59,31 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - install/update 클릭합니다.
   
   
-### DB Table 생성 및 초기 데이터 등록
+### DB 생성 및 초기 데이터 등록
+-데이터 등록
 	- windows 자동 실행 script는 개발 중입니다.
 	- 데이터베이스 생성합니다.<br>
-	   (Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)
+	  (Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)
 	- PostgreSQL에서 Extensions를 실시합니다. <br>
-       <code>  CREATE EXTENSION postgis  </code><br>
+	  <code>  CREATE EXTENSION postgis  </code><br>
 	- download 한 소스의 /mago3d-core/src/doc/database 폴더로 이동합니다.
-	   - PostgreSQL에서 database 폴더에 있는 쿼리를 실행해 줍니다.<br>
-	    - ddl 폴더의 sql 파일을 실행하여 table을 생성합니다.<br>
-	    - (table, table column comment 다국어 버전은 개발 중입니다.)<br>
-	    - ddl 폴더의 sequence sql 실행하여 sequence 생성합니다.<br>
-	    - index, trigger 폴더의 sql을 실행하여 index 및 partition 생성합니다.<br>
-	    - dml 폴더의 sql을 실행하여 초기 데이터 등록합니다.
+	- PostgreSQL에서 database 폴더에 있는 쿼리를 실행해 줍니다.<br>
+	   - ddl 폴더의 sql 파일을 실행하여 table을 생성합니다.<br>
+	   - (table, table column comment 다국어 버전은 개발 중입니다.)<br>
+	   - ddl 폴더의 sequence sql 실행하여 sequence 생성합니다.<br>
+	   - index, trigger 폴더의 sql을 실행하여 index 및 partition 생성합니다.<br>
+	   - dml 폴더의 sql을 실행하여 초기 데이터 등록합니다.
 	- dbinit.bat 파일을 실행하여 데이터를 초기화 합니다.<br>
-	   (경로 예시: C:\git\repository\mago3d\mago3d-core\src\doc\database)
+		   (경로 예시: C:\git\repository\mago3d\mago3d-core\src\doc\database)
 	
-  - 데이터 링크
+- 데이터 링크
 	- root folder인 data 폴더 아래 프로젝트 별로 디렉토리를 생성하여 관리합니다.<br>
 	  <code>  C:\data\프로젝트명  </code>
 	- mago3d-user에서 변환된 데이터를 저장하기 위한 링크를 걸어줍니다.
 	- D드라이브에 mago3d\data 폴더 생성
 	- C:\git\repository\mago3d\mago3d-user\src\main\webapp으로 이동 <br>
 	  <code>  mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"  </code>
-	
+		
 	
 
 ### Execution
