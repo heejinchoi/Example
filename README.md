@@ -112,7 +112,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 
 
-######Using Google Translator
+###### Using Google Translator
 # <a name="english"></a>mago3D
 mago3D is a next-generation three-dimensional platform that integrates and visualizes AEC (Architecture, Engineering, Construction) and traditional 3D spatial information (3D GIS). Unlike conventional solutions, mago3D seamlessly integrates AEC and 3D GIS in a web browser without distinction between indoor and outdoor. As a result, mago3D users can quickly view and collaborate on large-scale building information modeling (BIM), JT (Jupiter Tessellation) and 3D GIS files without installing any additional programs.
 
@@ -192,9 +192,8 @@ mago3DJs Integrate visualization data using open source JavaScript library for 3
 
 
 
-<a name="japan"></a>
 
-######Googleの翻訳を使用して
+###### Googleの翻訳を使用して
 # mago3D
 mago3DはAEC（Architecture、Engineering、Construction）領域と、伝統的な3次元空間情報（3D GIS）を統合的に管理、可視化してくれる次世代3次元のプラットフォームです。 mago3Dは、従来のソリューションとは異なり、室内外の区別なくシームレスにAECと3D GISをWebブラウザに統合されています。これにより、mago3Dユーザーは超大容量BIM（Building Information Modelling）、JT（Jupiter Tessellation）、3D GISファイルなどを、別のプログラムをインストールすることなく、Webブラウザ上ですぐに見てコラボレーションを行うことができます。
 
