@@ -106,7 +106,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 
 <br><br>
-[한국어](#korean)
+---
 <br><br>
 
 
@@ -187,7 +187,7 @@ mago3DJs Integrate visualization data using open source JavaScript library for 3
 
 
 <br><br>
-[english](#english)
+---
 <br><br>
 
 
