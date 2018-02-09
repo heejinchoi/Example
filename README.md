@@ -26,7 +26,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 ## Getting Started
 
 ###  Install
-- [java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+#### - [java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
   - java jdk-8u161-windows-x64.exe를 설치합니다.
 
 
@@ -39,14 +39,32 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - [PostgreSQL 9.6.3-1](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%EB%93%9C)
   - 설치경로 C:/PostgreSQL <br>
   	- 다른 경로로 지정하고 싶다면, mago3d-core/src/doc/database/dbinit.bat 에서 PostgreSQL 경로를 설치한 경로와 일치하게 지정해 줍니다. 
-  	
-  - DB Table 생성 및 초기 데이터 등록
+  
+  
+ - [PostGIS 2.3.2](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
+  - 설치경로 C:/PostGIS<br>
+  - PostgreSQL에서 Extensions(위에서 이미 설정)<br>
+  - PosGIS Extensions이 성공적으로 끝나면 spatial_ref_sys라는 테이블이 자동 생성됩니다
+
+
+- [gradle 4.1](https://gradle.org/docs/
+  - 설치경로 C:/gradl
+  - 시스템 변수 추가 -path -> C:\gradle\gradle-4.1 
+  - eclipse BuildShip Gradle Plugin을 사용하여 build합니다.
+
+
+- [lombok](https://projectlombok.org/
+  - 설치한 뒤에 다운로드 폴더 이동 후 실
+  - eclipse 설치 위치 [Specify location..]를 검색해서 'eclipse.exe' 파일을 선택합니다
+  - install/update 클릭합니다.
+  
+- DB Table 생성 및 초기 데이터 등록
 	- windows 자동 실행 script는 개발 중입니다.
-	- 데이터베이스를 생성합니다.<br>
+	1. 데이터베이스 생성합니다.<br>
 	  (Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)
-	- PostgreSQL에서 Extensions를 실시 <br>
-      <code>CREATE EXTENSION postgis</code>
-	- download 한 소스의 /mago3d-core/src/doc/database 폴더로 이동합니다.
+	2. PostgreSQL에서 Extensions를 실시합니다. <br>
+      <code>  CREATE EXTENSION postgis  </code>
+	3. download 한 소스의 /mago3d-core/src/doc/database 폴더로 이동합니다.
 	- PostgreSQL에서 database 폴더에 있는 쿼리를 실행해 줍니다.<br>
 	  - ddl 폴더의 sql 파일을 실행하여 table을 생성합니다.<br>
 	  - (table, table column comment 다국어 버전은 개발 중입니다.)<br>
@@ -65,22 +83,6 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	  <code>mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</code>
 	
 	
-- [PostGIS 2.3.2](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
-  - 설치경로 C:/PostGIS<br>
-  - PostgreSQL에서 Extensions(위에서 이미 설정)<br>
-  - PosGIS Extensions이 성공적으로 끝나면 spatial_ref_sys라는 테이블이 자동 생성됩니다
-
-
-
-- [gradle 4.1](https://gradle.org/docs/
-  - 설치경로 C:/gradl
-  - 시스템 변수 추가 -path -> C:\gradle\gradle-4.1 
-  - eclipse BuildShip Gradle Plugin을 사용하여 build합니다.
-
-- [lombok](https://projectlombok.org/
-  - 설치한 뒤에 다운로드 폴더 이동 후 실
-  - eclipse 설치 위치 [Specify location..]를 검색해서 'eclipse.exe' 파일을 선택합니다
-  - install/update 클릭합니다.
 
 ### Execution
 - mago3D-admin project spring boot 실행
