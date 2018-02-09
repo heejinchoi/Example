@@ -61,7 +61,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
   
   
 ### 2. DB 생성 및 초기 데이터 등록
--데이터 등록
+- 데이터 등록
 	- windows 자동 실행 script는 개발 중입니다.
 	- 데이터베이스 생성합니다.<br>
 	  (Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)
