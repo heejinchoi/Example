@@ -26,7 +26,6 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 ## Getting Started
 
 ### 1. Install
-
 #### [java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - java jdk-8u161-windows-x64.exe를 설치합니다.
 
@@ -58,6 +57,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - 설치한 뒤에 다운로드 폴더 이동 후 실
 - eclipse 설치 위치 [Specify location..]를 검색해서 'eclipse.exe' 파일을 선택합니다
 - install/update 클릭합니다.
+
   
   
 ### 2. DB 생성 및 초기 데이터 등록
@@ -110,8 +110,10 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 <br><br>
 [한국어](#korean)
+<br><br>
 
-# <a name="english"></a>mago3D
+
+# <a name="english"></a>mago3D ####### Using Google Translator
 mago3D is a next-generation three-dimensional platform that integrates and visualizes AEC (Architecture, Engineering, Construction) and traditional 3D spatial information (3D GIS). Unlike conventional solutions, mago3D seamlessly integrates AEC and 3D GIS in a web browser without distinction between indoor and outdoor. As a result, mago3D users can quickly view and collaborate on large-scale building information modeling (BIM), JT (Jupiter Tessellation) and 3D GIS files without installing any additional programs.
 
 ## Mission
