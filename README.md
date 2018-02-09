@@ -25,7 +25,8 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 ## Getting Started
 
-### Install
+### 1. Install
+
 #### [java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - java jdk-8u161-windows-x64.exe를 설치합니다.
 
@@ -59,7 +60,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - install/update 클릭합니다.
   
   
-### DB 생성 및 초기 데이터 등록
+### 2. DB 생성 및 초기 데이터 등록
 -데이터 등록
 	- windows 자동 실행 script는 개발 중입니다.
 	- 데이터베이스 생성합니다.<br>
@@ -86,15 +87,17 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 		
 	
 
-### Execution
+### 3. Execution
 - mago3D-admin project spring boot 실행
 <pre><code>/mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java</code></pre>
 - mago3D-user project spring boot 실행 <br>
 <pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
 
+
 ## github
 - [mago3DJs](https://github.com/Gaia3D/mago3djs) 깃허브 사이트 입니다
 - [F4DConverter](https://github.com/Gaia3D/F4DConverter) 깃허브 사이트 입니다.
+
 
 ## License
 [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
