@@ -162,7 +162,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 #### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%%EB93%9C)
 - Set PostgreSQL9.6.3 to the latest version
-- Installation path C: / PostgreSQL <br>
+- Installation path C:/PostgreSQL <br>
   mago3d-core/src/doc/database/dbinit.bat matches the installation path
 
   
@@ -226,7 +226,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 <pre><code>/mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java</code></pre>
 
 - run mago3D-user project spring boot <br>
-  url: http: //localhost/homepage/demo.do
+  url: http://localhost/homepage/demo.do
 <pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
 
 
