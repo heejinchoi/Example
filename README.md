@@ -49,8 +49,8 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 #### [gradle](https://gradle.org/docs/)
 - 설치경로 C:/gradl
-- 시스템 변수 추가 -path <br> 
-  C:\gradle\gradle-4.1 
+- 시스템 변수 추가 <br> 
+  Path) C:\gradle\gradle-4.1 
 - eclipse BuildShip Gradle Plugin을 사용하여 build합니다.
 
 
@@ -66,38 +66,41 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	  <code>  Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)  </code>
 	- PostgreSQL에서 Extensions를 실시합니다. <br>
 	  <code>  CREATE EXTENSION postgis  </code><br>
-	  - PosGIS Extensions이 성공적으로 끝나면 데이터베이스 생성 및 초기 데이더 등록 후 spatial_ref_sys라는 테이블이 자동 생성됩니다.
+	  PosGIS Extensions이 성공적으로 끝나면 데이터베이스 생성 및 초기 데이더 등록 후 spatial_ref_sys라는 테이블이 자동 생성됩니다.
 	- download 한 소스의 /mago3d-core/src/doc/database 폴더로 이동합니다.
 	- PostgreSQL에서 database 폴더에 있는 쿼리를 실행해 줍니다. (windows 자동 실행 script는 개발 중입니다.) <br>
-	   - ddl 폴더의 sql 파일을 실행하여 table을 생성합니다. (table, table column comment 다국어 버전은 개발 중입니다.)<br>
+	   - ddl 폴더의 sql 파일을 실행하여 table을 생성합니다. <br>
+	     (table, table column comment 다국어 버전은 개발 중입니다.)
 	   - ddl 폴더의 sequence sql 실행하여 sequence 생성합니다.<br>
 	   - index, trigger 폴더의 sql을 실행하여 index 및 partition 생성합니다.<br>
 	   - dml 폴더의 sql을 실행하여 초기 데이터 등록합니다.
 	- dbinit.bat 파일을 실행하여 데이터를 초기화 합니다.<br>
-	  ex) C:\git\repository\mago3d\mago3d-core\src\doc\database\dbinit.bat
+	  ex) C:\git\repository\mago3d\mago3d-core\src\doc\database\dbinit.bat 실행
 	
 	
 	
 - 데이터 링크
 	- F4D Converter 파일을 서비스하기 위한 폴더를 지정합니다. <br>
-	  ex) data 폴더 하위에 프로젝트 별로 디렉토리를 생성하여 관리 -> <code>  C:\data\프로젝트명    </code>
+	  ex) data 폴더 하위에 프로젝트 별로 디렉토리를 생성하여 관리 → <code>  C:\data\프로젝트명    </code>
 	- mago3d-user 데이터를 저장하기 위한 심볼릭 링크(symbolic link)를 걸어줍니다.
 	- 관리자 권한으로 Command Line Prompt(cmd.exe)를 실행
 	- mago3d-user\src\main\webapp 디렉토리로 이동 <br>
 	  <code>   C:\git\repository\mago3d\mago3d-user\src\main\webapp > mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"   </code>
 	- 사용자가 데이터를 업로드 할 폴더를 생성합니다. <br>
 	  ex) D드라이브에 mago3d\data 폴더 생성	
-	  - mago3d-admin\src\main\resources\mago3d.properties 에서 변경 가능
+	  mago3d-admin\src\main\resources\mago3d.properties 에서 변경 가능
 	
 
 ### 3. Execution
 - mago3D-admin project spring boot 실행
 <pre><code>/mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java</code></pre>
+url : http://localhost(:port)/login/login.do
 - mago3D-user project spring boot 실행 <br>
 <pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
+url : http://localhost/homepage/demo.do
 - mago3DJS Node.js Application 실행
 <pre><code>/mago3djs/server.js</pre></code>
-	- url : http://localhost/sample/cesium.html
+url : http://localhost/sample/cesium.html
 
 
 ## github
