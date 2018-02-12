@@ -63,9 +63,9 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 ### 2. DB 생성 및 초기 데이터 등록
 - 데이터 등록
 	- 데이터베이스를 생성합니다.
-	  <code><pre>Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)</pre></code>
+	  <pre><code>Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)</code></pre>
 	- PostgreSQL에서 Extensions를 실시합니다.
-	  <code><pre>CREATE EXTENSION postgis</pre></code>
+	  <pre><code>CREATE EXTENSION postgis</code></pre>
 	  PosGIS Extensions이 성공적으로 끝나면 데이터베이스 생성 및 초기 데이더 등록 후 spatial_ref_sys라는 테이블이 자동 생성됩니다.
 	- download 한 소스의 /mago3d-core/src/doc/database 폴더로 이동합니다.
 	- PostgreSQL에서 database 폴더에 있는 쿼리를 실행해 줍니다. (windows 자동 실행 script는 개발 중입니다.) <br>
@@ -85,7 +85,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	- mago3d-user 데이터를 저장하기 위한 심볼릭 링크(symbolic link)를 걸어줍니다.
 	- 관리자 권한으로 Command Line Prompt(cmd.exe)를 실행
 	- mago3d-user\src\main\webapp 디렉토리로 이동
-	  <code><pre>C:\git\repository\mago3d\mago3d-user\src\main\webapp > mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</pre></code>
+	  <pre><code>C:\git\repository\mago3d\mago3d-user\src\main\webapp > mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</code></pre>
 	- 사용자가 데이터를 업로드 할 폴더를 생성합니다. <br>
 	  ex) D드라이브에 mago3d\data 폴더 생성	
 	  mago3d-admin\src\main\resources\mago3d.properties 에서 변경 가능
