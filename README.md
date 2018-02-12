@@ -163,7 +163,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 #### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%%EB93%9C)
 - Set PostgreSQL9.6.3 to the latest version
 - Installation path C:/PostgreSQL <br>
-  mago3d-core/src/doc/database/dbinit.bat matches the installation path
+  mago3d-core/src/doc/database/dbinit.bat 에서 설치 경로와 일치
 
   
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
@@ -284,13 +284,13 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 
 #### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%EB％93％9C)
 - PostgreSQL9.6.3最新のバージョンに設定
-- インストールパスはC：/ PostgreSQL <br>
-  mago3d-core / src / doc / database / dbinit.batでインストールパスと一致
+- インストールパスは C:/PostgreSQL <br>
+  mago3d-core/src/doc/database/dbinit.bat でインストールパスと一致
 
   
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
 - PostGIS最新のSQLバージョンに設定
-- インストールパスはC:/ PostGIS
+- インストールパスは C:/PostGIS
 
 
 #### [gradle](https://gradle.org/docs)
@@ -303,7 +303,7 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 #### [lombok](https://projectlombok.org/)
 - インストールした後にダウンロードフォルダの移動後に実行
 - eclipse設置位置[Specify location ..]を検索して「eclipse.exe」ファイルを選択します。
-- install/updateクリックします。
+- install/update クリックします。
 
   
 ### 2. DBの作成と初期データの登録
