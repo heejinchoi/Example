@@ -23,6 +23,8 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
   - PostGIS
   - Gradle
 
+<br>
+
 ## Getting Started
 
 ### 1. Install
@@ -59,6 +61,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - eclipse 설치 위치 [Specify location..]를 검색해서 'eclipse.exe' 파일을 선택합니다.
 - install/update 클릭합니다.
 
+<br>
   
 ### 2. DB 생성 및 초기 데이터 등록
 
@@ -80,8 +83,9 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	   - dml 폴더의 sql을 실행하여 초기 데이터 등록합니다.
 	- dbinit.bat 파일을 실행하여 데이터를 초기화 합니다.<br>
 	  ex) C:\git\repository\mago3d\mago3d-core\src\doc\database\dbinit.bat 실행
-	
-	
+
+<br>
+
 ### 3. symbolic link
 
 - 데이터 링크
@@ -95,6 +99,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	  ex) D드라이브에 mago3d\data 폴더 생성	
 	  mago3d-admin\src\main\resources\mago3d.properties 에서 변경 가능
 	
+<br>
 
 ### 4. Execution
 - mago3D-admin project spring boot 실행 <br>
@@ -106,11 +111,13 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 <pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
 
 
+<br>
 
 ## github
 - [mago3DJs](https://github.com/Gaia3D/mago3djs) 깃허브 사이트 입니다
 - [F4DConverter](https://github.com/Gaia3D/F4DConverter) 깃허브 사이트 입니다.
 
+<br>
 
 ## License
 [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
@@ -126,16 +133,19 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 
 ###### Using Google Translator
-# <a name="english"></a>mago3D
+#mago3D
 mago3D is a next-generation 3D platform that integrates and visualizes AEC (Architecture, Engineering, Construction) areas and traditional 3D spatial information (3D GIS). mago3D seamlessly integrates AEC and 3D GIS in a web browser, indistinguishable from existing solutions. As a result, mago3D users can quickly view and collaborate on large capacity building information modeling (BIM), JT (Jupiter Tessellation) and 3D GIS files without installing any additional programs.
+
 
 ## Mission
 mago3DJS Integrate visualization data with open source JavaScript library for 3-D multi-block visualization.
+
 
 ## Features
  - Issue Status You can see new issue, ongoing issue, and finished issue.
  - It is easy to view the status by user status graph.
  - DB Connection Pool status or DV session status can be viewed as a table.
+
 
 ## Development Environment
   - Spring
@@ -145,94 +155,100 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
   - PostGIS
   - Gradle
 
+<br>
+
 ## Getting Started
 
 ### 1. Install
-#### [java] (http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+#### [java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - java jdk-8u161 (8 version installed)
 
 
-#### [eclipse] (https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe)
+#### [eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe)
 - eclipse Oxygen (neon version or higher installed)
 - After running eclipse Project Import <br>
   File -> import -> Gradle -> Existing Gradle Project
 
 
-#### [PostgreSQL] (https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%% EB 93% 9C)
+#### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%% EB 93% 9C)
 - Set PostgreSQL9.6.3 to the latest version
 - Installation path C: / PostgreSQL <br>
   mago3d-core / src / doc / database / dbinit.bat matches the installation path
 
   
-#### [PostGIS] (https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
+#### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
 - Set to latest SQL version of PostGIS
-- Installation path C: / PostGIS <br>
+- Installation path C:/PostGIS <br>
 
 
-#### [gradle] (https://gradle.org/docs/)
-- Installation path C: / gradle
+#### [gradle](https://gradle.org/docs/)
+- Installation path C:/gradle
 - Add System Variable <br>
-  Path) C: \ grade \ grade-4.1
+  Path) C:\grade\grade-4.1
 - Build using eclipse BuildShip Gradle Plugin.
 
 
 #### [lombok] (https://projectlombok.org/)
 - After installation, move the download folder and execute it.
 - Locate the eclipse installation location [Specify location ..] and select the file 'eclipse.exe'.
-- Click on install / update.
+- Click on install/update.
 
+<br>
   
-### 2. DB creation and initial data registration
+### 2. DB creation & initial data registration
 
 - Database & Extensions
-- Create a database.
-C, Connection Limit: -1) </ pre> </ pre> </ p> <p>
-- Execute Extensions in PostgreSQL.
-<pre> <code> CREATE EXTENSION postgis </ code> </ pre>
-When PosGIS Extensions is successfully completed, a table called spatial_ref_sys is automatically created after creating the database and registering the initial data.
+	- Create a database.
+	  <pre><code>Name:mago3d, Encoding:UTF-8, Template:template0, Collation:C, Character type:C, Connection Limit:-1)</code></pre
+	- Execute Extensions in PostgreSQL.
+	  <pre><code> CREATE EXTENSION postgis </code></pre>
+	  When PosGIS Extensions is successfully completed, a table called spatial_ref_sys is automatically created after creating the database and registering the initial data.
 
 
 - Data registration
-- Go to the / mago3d-core / src / doc / database folder of the downloaded source.
-- PostgreSQL will execute the query in the database folder. (Windows autorun script is under development.) <br>
-- Run the sql file in the ddl folder to create the table. <br>
-(A multilanguage version of table, table column comment is under development.)
-- Generate sequence by executing sequence sql in ddl folder <br>
-- Execute sql of index, trigger folder to create index and partition. <br>
-- Register the initial data by running sql in the dml folder.
-- Run the dbinit.bat file to initialize the data. <br>
-ex) Run C: \ git \ repository \ mago3d \ mago3d-core \ src \ doc \ database \ dbinit.bat
+	- Go to the /mago3d-core/src/doc/database folder of the downloaded source.
+	- PostgreSQL will execute the query in the database folder. (Windows autorun script is under development.) <br>
+	- Run the sql file in the ddl folder to create the table. <br>
+	  (A multilanguage version of table, table column comment is under development.)
+	- Generate sequence by executing sequence sql in ddl folder <br>
+	- Execute sql of index, trigger folder to create index and partition. <br>
+	- Register the initial data by running sql in the dml folder.
+	- Run the dbinit.bat file to initialize the data. <br>
+	  ex) C:\git\repository\mago3d\mago3d-core\src\doc\database\dbinit.bat
 
+<br>
 
 ### 3. symbolic link
 
 - Data link
-- F4D Converter Specify the folder to serve the file. <br>
-ex) Create and manage a project-specific directory under the data folder → <code> C: \ data \ project name </ code>
-- mago3d-user Makes a symbolic link for storing data.
-- Execute Command Line Prompt (cmd.exe) with administrative privileges
-- Go to mago3d-user \ src \ main \ webapp directory
-c: \ git \ repository \ mago3d \ mago3d-user \ src \ main \ webapp \ data \ mango3d-user \ "C: \ data" </ code> </ pre>
-- Creates a folder where users can upload data. <br>
-ex) Create mago3d \ data folder on drive D.
-mago3d-admin \ src \ main \ resources \ mago3d.properties
+	- F4D Converter Specify the folder to serve the file. <br>
+	  ex) Create and manage a project-specific directory under the data folder → <code>C:\data\project name</code>
+	- mago3d-user Makes a symbolic link for storing data.
+	- Execute Command Line Prompt (cmd.exe) with administrative privileges
+	- Go to mago3d-user\src\main\webapp directory
+	  <pre><code>C:\git\repository\mago3d\mago3d-user\src\main\webapp > mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</code></pre>
+	- Creates a folder where users can upload data. <br>
+	  ex) Create mago3d\data folder on drive D.
+	  mago3d-admin\src\main\resources\mago3d.properties
 
+<br>
 
 ### 4. Execution
 - run mago3D-admin project spring boot <br>
-  url: http: // localhost (: port) /login/login.do
-<pre> <code> /mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java </ code> </ pre>
+  url: http://localhost(:port)/login/login.do
+<pre><code>/mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java</code></pre>
 
 - run mago3D-user project spring boot <br>
   url: http: //localhost/homepage/demo.do
-<pre> <code> /mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java </ code> </ pre>
+<pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
 
-
+<br>
 
 ## github
 - [mago3DJs] (https://github.com/Gaia3D/mago3djs) is a feather hub site
 - [F4DConverter] (https://github.com/Gaia3D/F4DConverter) This is the hub site.
 
+<br>
 
 ## License
 [Apache License Version 2.0] (http://www.apache.org/licenses/LICENSE-2.0.html).
@@ -247,7 +263,7 @@ mago3d-admin \ src \ main \ resources \ mago3d.properties
 
 
 ###### Googleの翻訳を使用して
-# <a name="japan"></a>mago3D
+# mago3D
 mago3DはAEC（Architecture、Engineering、Construction）領域と、伝統的な3次元空間情報（3D GIS）を統合的に管理、可視化してくれる次世代3次元のプラットフォームです。 mago3Dは、従来のソリューションとは異なり、室内外の区別なくシームレスにAECと3D GISをWebブラウザに統合されています。これにより、mago3Dユーザーは超大容量BIM（Building Information Modelling）、JT（Jupiter Tessellation）、3D GISファイルなどを、別のプログラムをインストールすることなく、Webブラウザ上ですぐに見てコラボレーションを行うことができます。
 
 ## Mission
@@ -269,23 +285,23 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 ## Getting Started
 
 ### 1. Install
-#### [java]（http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html）
+#### [java]http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html）
 - java jdk-8u161（8バージョンのインストール）
 
 
-#### [eclipse]（https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe）
+#### [eclipse]https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe）
 - eclipse Oxygen（neon以降のインストール）
 - eclipseを実行した後Project Import <br>
   File - > import - > Gradle - > Existing Gradle Project
 
 
-#### [PostgreSQL]（https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4% EB％93％9C）
+#### [PostgreSQL]https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4% EB％93％9C）
 - PostgreSQL9.6.3最新のバージョンに設定
 - インストールパスはC：/ PostgreSQL <br>
   mago3d-core / src / doc / database / dbinit.batでインストールパスと一致
 
   
-#### [PostGIS]（https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98）
+#### [PostGIS]https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98）
 - PostGIS最新のSQLバージョンに設定
 - インストールパスはC：/ PostGIS <br>
 
@@ -307,9 +323,9 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 
 - Database＆Extensions
 - データベースを作成します。
-<pre> <code> Name：mago3d、Encoding：UTF-8、Template：template0、Collat​​ion：C、Character type：C、Connection Limit：-1）</ code> </ pre>
+<pre><code> Name：mago3d、Encoding：UTF-8、Template：template0、Collat​​ion：C、Character type：C、Connection Limit：-1）</code></pre>
 - PostgreSQLでExtensionsを行います。
-<pre> <code> CREATE EXTENSION postgis </ code> </ pre>
+<pre><code> CREATE EXTENSION postgis </code></pre>
 PosGIS Extensionsが正常に完了したら、データベースの作成と初期データより登録後spatial_ref_sysというテーブルが自動的に作成されます。
 
 
