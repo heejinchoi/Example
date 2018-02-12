@@ -61,7 +61,6 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - eclipse 설치 위치 [Specify location..]를 검색해서 'eclipse.exe' 파일을 선택합니다.
 - install/update 클릭합니다.
 
-<br>
   
 ### 2. DB 생성 및 초기 데이터 등록
 
@@ -84,7 +83,6 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	- dbinit.bat 파일을 실행하여 데이터를 초기화 합니다.<br>
 	  ex) C:\git\repository\mago3d\mago3d-core\src\doc\database\dbinit.bat 실행
 
-<br>
 
 ### 3. symbolic link
 
@@ -98,8 +96,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	- 사용자가 데이터를 업로드 할 폴더를 생성합니다. <br>
 	  ex) D드라이브에 mago3d\data 폴더 생성	
 	  mago3d-admin\src\main\resources\mago3d.properties 에서 변경 가능
-	
-<br>
+
 
 ### 4. Execution
 - mago3D-admin project spring boot 실행 <br>
@@ -111,17 +108,13 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 <pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
 
 
-<br>
-
 ## github
 - [mago3DJs](https://github.com/Gaia3D/mago3djs) 깃허브 사이트 입니다
 - [F4DConverter](https://github.com/Gaia3D/F4DConverter) 깃허브 사이트 입니다.
 
-<br>
 
 ## License
 [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
-
 
 
 
@@ -131,9 +124,8 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 
 
-
 ###### Using Google Translator
-#mago3D
+# <a name="english"></a>mago3D
 mago3D is a next-generation 3D platform that integrates and visualizes AEC (Architecture, Engineering, Construction) areas and traditional 3D spatial information (3D GIS). mago3D seamlessly integrates AEC and 3D GIS in a web browser, indistinguishable from existing solutions. As a result, mago3D users can quickly view and collaborate on large capacity building information modeling (BIM), JT (Jupiter Tessellation) and 3D GIS files without installing any additional programs.
 
 
@@ -148,12 +140,12 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 
 ## Development Environment
-  - Spring
-  - mybatis
-  - lombok
-  - PostgreSQL
-  - PostGIS
-  - Gradle
+- Spring
+- mybatis
+- lombok
+- PostgreSQL
+- PostGIS
+- Gradle
 
 <br>
 
@@ -188,12 +180,11 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 - Build using eclipse BuildShip Gradle Plugin.
 
 
-#### [lombok] (https://projectlombok.org/)
+#### [lombok](https://projectlombok.org/)
 - After installation, move the download folder and execute it.
 - Locate the eclipse installation location [Specify location ..] and select the file 'eclipse.exe'.
 - Click on install/update.
 
-<br>
   
 ### 2. DB creation & initial data registration
 
@@ -216,7 +207,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 	- Run the dbinit.bat file to initialize the data. <br>
 	  ex) C:\git\repository\mago3d\mago3d-core\src\doc\database\dbinit.bat
 
-<br>
 
 ### 3. symbolic link
 
@@ -231,7 +221,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 	  ex) Create mago3d\data folder on drive D.
 	  mago3d-admin\src\main\resources\mago3d.properties
 
-<br>
 
 ### 4. Execution
 - run mago3D-admin project spring boot <br>
@@ -242,7 +231,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
   url: http: //localhost/homepage/demo.do
 <pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
 
-<br>
 
 ## github
 - [mago3DJs] (https://github.com/Gaia3D/mago3djs) is a feather hub site
@@ -263,7 +251,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 
 ###### Googleの翻訳を使用して
-# mago3D
+# <a name="japan"></a>mago3D
 mago3DはAEC（Architecture、Engineering、Construction）領域と、伝統的な3次元空間情報（3D GIS）を統合的に管理、可視化してくれる次世代3次元のプラットフォームです。 mago3Dは、従来のソリューションとは異なり、室内外の区別なくシームレスにAECと3D GISをWebブラウザに統合されています。これにより、mago3Dユーザーは超大容量BIM（Building Information Modelling）、JT（Jupiter Tessellation）、3D GISファイルなどを、別のプログラムをインストールすることなく、Webブラウザ上ですぐに見てコラボレーションを行うことができます。
 
 ## Mission
