@@ -94,9 +94,6 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 	- 관리자 권한으로 Command Line Prompt(cmd.exe)를 실행
 	- mago3d-user\src\main\webapp 디렉토리로 이동
 	  <pre><code>C:\git\repository\mago3d\mago3d-user\src\main\webapp > mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</code></pre>
-	- 사용자가 데이터를 업로드 할 폴더를 생성합니다. <br>
-	  ex) D드라이브에 mago3d\data 폴더 생성	
-	  mago3d-admin\src\main\resources\mago3d.properties 에서 변경 가능
 
 
 ### 4. Execution
@@ -216,9 +213,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 	- Execute Command Line Prompt (cmd.exe) with administrative privileges
 	- Go to mago3d-user\src\main\webapp directory
 	  <pre><code>C:\git\repository\mago3d\mago3d-user\src\main\webapp > mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</code></pre>
-	- Creates a folder where users can upload data. <br>
-	  ex) Create mago3d\data folder on drive D.
-	  mago3d-admin\src\main\resources\mago3d.properties
 
 
 ### 4. Execution
@@ -338,9 +332,6 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 	- 管理者権限でCommand Line Prompt(cmd.exe)を実行
 	- mago3d-user\src\main\webapp ディレクトリに移動
 	  <pre><code>C:\git\repository\mago3d\mago3d-user\src\main\webapp> mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</code></pre>
-	- ユーザーがデータをアップロードするフォルダを作成します。 <br>
-	  ex）Dドライブにmago3d \ dataフォルダの作成
-	  mago3d-admin\src\main\resources\mago3d.properties で変更可能
 
 
 ### 4. Execution
