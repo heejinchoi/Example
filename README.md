@@ -23,7 +23,6 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - PostGIS
 - Gradle
 
-<br>
 
 ## Getting Started
 
@@ -143,7 +142,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 - PostGIS
 - Gradle
 
-<br>
 
 ## Getting Started
 
@@ -241,7 +239,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 
 
-
 ###### Googleの翻訳を使用して
 # <a name="japan"></a>mago3D
 mago3DはAEC（Architecture、Engineering、Construction）領域と、伝統的な3次元空間情報（3D GIS）を統合的に管理、可視化してくれる次世代3次元のプラットフォームです。 mago3Dは、従来のソリューションとは異なり、室内外の区別なくシームレスにAECと3D GISをWebブラウザに統合されています。これにより、mago3Dユーザーは超大容量BIM（Building Information Modelling）、JT（Jupiter Tessellation）、3D GISファイルなどを、別のプログラムをインストールすることなく、Webブラウザ上ですぐに見てコラボレーションを行うことができます。
@@ -262,7 +259,6 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 - PostGIS
 - Gradle
 
-<br>
 
 ## Getting Started
 
