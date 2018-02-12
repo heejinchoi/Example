@@ -134,9 +134,9 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 
 ## Features
- - Issue Status You can see new issue, ongoing issue, and finished issue.
- - It is easy to view the status by user status graph.
- - DB Connection Pool status or DV session status can be viewed as a table.
+- Issue Status You can see new issue, ongoing issue, and finished issue.
+- It is easy to view the status by user status graph.
+- DB Connection Pool status or DV session status can be viewed as a table.
 
 
 ## Development Environment
@@ -162,7 +162,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
   File -> import -> Gradle -> Existing Gradle Project
 
 
-#### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%% EB 93% 9C)
+#### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%%EB93%9C)
 - Set PostgreSQL9.6.3 to the latest version
 - Installation path C: / PostgreSQL <br>
   mago3d-core / src / doc / database / dbinit.bat matches the installation path
@@ -233,13 +233,13 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 
 ## github
-- [mago3DJs] (https://github.com/Gaia3D/mago3djs) is a feather hub site
-- [F4DConverter] (https://github.com/Gaia3D/F4DConverter) This is the hub site.
+- [mago3DJs](https://github.com/Gaia3D/mago3djs) is a feather hub site
+- [F4DConverter](https://github.com/Gaia3D/F4DConverter) This is the hub site.
 
 <br>
 
 ## License
-[Apache License Version 2.0] (http://www.apache.org/licenses/LICENSE-2.0.html).
+[Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
 
 
@@ -258,50 +258,52 @@ mago3DはAEC（Architecture、Engineering、Construction）領域と、伝統的
 mago3DJS 3次元マルチブロック可視化のためのオープンソースのJavaScriptライブラリを使用した可視化データを統合課題及び問題管理をすることができます。
 
 ## Features
-  - 問題の現状新規問題、進行中の問題、終了した問題を見ることができます。
-  - ユーザーの状態別状況をグラフになっており表示楽です。
-  - DB Connection Pool現況やDVセッションのステータスをテーブルに見ることができます。
+- 問題の現状新規問題、進行中の問題、終了した問題を見ることができます。
+- ユーザーの状態別状況をグラフになっており表示楽です。
+- DB Connection Pool現況やDVセッションのステータスをテーブルに見ることができます。
 
 ## Development Environment
-   - Spring
-   - mybatis
-   - lombok
-   - PostgreSQL
-   - PostGIS
-   - Gradle
+- Spring
+- mybatis
+- lombok
+- PostgreSQL
+- PostGIS
+- Gradle
 
 ## Getting Started
 
+<br>
+
 ### 1. Install
-#### [java]http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html）
+#### [java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - java jdk-8u161（8バージョンのインストール）
 
 
-#### [eclipse]https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe）
+#### [eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe)
 - eclipse Oxygen（neon以降のインストール）
 - eclipseを実行した後Project Import <br>
   File - > import - > Gradle - > Existing Gradle Project
 
 
-#### [PostgreSQL]https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4% EB％93％9C）
+#### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%EB％93％9C)
 - PostgreSQL9.6.3最新のバージョンに設定
 - インストールパスはC：/ PostgreSQL <br>
   mago3d-core / src / doc / database / dbinit.batでインストールパスと一致
 
   
-#### [PostGIS]https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98）
+#### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98）
 - PostGIS最新のSQLバージョンに設定
 - インストールパスはC：/ PostGIS <br>
 
 
-#### [gradle]（https://gradle.org/docs/）
+#### [gradle](https://gradle.org/docs)
 - インストールパスはC：/ gradle
 - システム変数の追加<br>
   Path）C：\ gradle \ gradle-4.1
 - eclipse BuildShip Gradle Pluginを使用してbuildします。
 
 
-#### [lombok]（https://projectlombok.org/）
+#### [lombok](https://projectlombok.org/)
 - インストールした後にダウンロードフォルダの移動後に実行
 - eclipse設置位置[Specify location ..]を検索して「eclipse.exe」ファイルを選択します。
 - install / updateクリックします。
@@ -310,37 +312,37 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 ### 2. DBの作成と初期データの登録
 
 - Database＆Extensions
-- データベースを作成します。
-<pre><code> Name：mago3d、Encoding：UTF-8、Template：template0、Collat​​ion：C、Character type：C、Connection Limit：-1）</code></pre>
-- PostgreSQLでExtensionsを行います。
-<pre><code> CREATE EXTENSION postgis </code></pre>
-PosGIS Extensionsが正常に完了したら、データベースの作成と初期データより登録後spatial_ref_sysというテーブルが自動的に作成されます。
+	- データベースを作成します。
+	  <pre><code> Name：mago3d、Encoding：UTF-8、Template：template0、Collat​​ion：C、Character type：C、Connection Limit：-1）</code></pre>
+	- PostgreSQLでExtensionsを行います。
+	  <pre><code> CREATE EXTENSION postgis </code></pre>
+	  PosGIS Extensionsが正常に完了したら、データベースの作成と初期データより登録後spatial_ref_sysというテーブルが自動的に作成されます。
 
 
 - データの登録
-- downloadしたソースの/ mago3d-core / src / doc / databaseフォルダに移動します。
-- PostgreSQLでdatabaseフォルダにあるクエリを実行してくれます。 （windows自動実行scriptは開発中です。）<br>
-- ddlフォルダのsqlファイルを実行してtableを生成します。 <br>
-（table、table column comment多言語バージョンは開発中です。）
-- ddlフォルダのsequence sql実行してsequence生成します。<br>
-- index、triggerフォルダのsqlを実行して、indexとpartition生成します。<br>
-- dmlフォルダのsqlを実行して、初期データ登録します。
-- dbinit.batファイルを実行して、データを初期化します。<br>
-ex）C：\ git \ repository \ mago3d \ mago3d-core \ src \ doc \ database \ dbinit.bat実行
+	- downloadしたソースの/ mago3d-core / src / doc / databaseフォルダに移動します。
+	- PostgreSQLでdatabaseフォルダにあるクエリを実行してくれます。 （windows自動実行scriptは開発中です。）<br>
+	- ddlフォルダのsqlファイルを実行してtableを生成します。 <br>
+	  （table、table column comment多言語バージョンは開発中です。）
+	- ddlフォルダのsequence sql実行してsequence生成します。<br>
+	- index、triggerフォルダのsqlを実行して、indexとpartition生成します。<br>
+	- dmlフォルダのsqlを実行して、初期データ登録します。
+	- dbinit.batファイルを実行して、データを初期化します。<br>
+	  ex）C：\ git \ repository \ mago3d \ mago3d-core \ src \ doc \ database \ dbinit.bat実行
 
 
 ### 3. symbolic link
 
 - データリンク
-- F4D Converterファイルをサービスするためのフォルダを指定します。 <br>
-ex）dataフォルダサブプロジェクトごとにディレクトリを作成して管理→<code> C：\ data \プロジェクト名</ code>
-- mago3d-userデータを格納するためのシンボリックリンク（symbolic link）をかけます。
-- 管理者権限でCommand Line Prompt（cmd.exe）を実行
-- mago3d-user \ src \ main \ webappディレクトリに移動
-<pre> <code> C：\ git \ repository \ mago3d \ mago3d-user \ src \ main \ webapp> mklink / d "C：\ git \ repository \ mago3d \ mago3d-user \ src \ main \ webapp \ data" "C：\ data" </ code> </ pre>
-- ユーザーがデータをアップロードするフォルダを作成します。 <br>
-ex）Dドライブにmago3d \ dataフォルダの作成
-mago3d-admin \ src \ main \ resources \ mago3d.propertiesで変更可能
+	- F4D Converterファイルをサービスするためのフォルダを指定します。 <br>
+	  ex）dataフォルダサブプロジェクトごとにディレクトリを作成して管理 → <code>C:\ data\プロジェクト名</code>
+	- mago3d-userデータを格納するためのシンボリックリンク（symbolic link）をかけます。
+	- 管理者権限でCommand Line Prompt（cmd.exe）を実行
+	- mago3d-user \ src \ main \ webappディレクトリに移動
+	  <pre> <code> C：\ git \ repository \ mago3d \ mago3d-user \ src \ main \ webapp> mklink / d "C：\ git \ repository \ mago3d \ mago3d-user \ src \ main \ webapp \ data" "C：\ data" </ code> </ pre>
+	- ユーザーがデータをアップロードするフォルダを作成します。 <br>
+	  ex）Dドライブにmago3d \ dataフォルダの作成
+	  mago3d-admin \ src \ main \ resources \ mago3d.propertiesで変更可能
 
 
 ### 4. Execution
@@ -355,12 +357,12 @@ mago3d-admin \ src \ main \ resources \ mago3d.propertiesで変更可能
 
 
 ## github
-- [mago3DJs]（https://github.com/Gaia3D/mago3djs）襟ハブサイトです
-- [F4DConverter]（https://github.com/Gaia3D/F4DConverter）襟ハブサイトです。
+- [mago3DJs](https://github.com/Gaia3D/mago3djs)襟ハブサイトです
+- [F4DConverter](https://github.com/Gaia3D/F4DConverter)襟ハブサイトです。
 
 
 ## License
-[Apache License Version 2.0]（http://www.apache.org/licenses/LICENSE-2.0.html）。
+[Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)。
 
 
 
