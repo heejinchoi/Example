@@ -11,17 +11,17 @@ mago3D는 AEC(Architecture, Engineering, Construction) 영역과 전통적인 3�
 mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립트 라이브러리를 사용한 가시화 데이터를 통합 과제 & 이슈 관리를 할 수 있습니다.
 
 ## Features
- - 이슈 현황 신규 이슈, 진행 중인 이슈, 완료된 이슈를 볼 수 있습니다.
- - 사용자 상태별 현황을 그래프로 되어 있어 보기 편합니다.
- - DB Connection Pool 현황이나 DV세션 현황을 테이블로 볼 수 있습니다.
+- 이슈 현황 신규 이슈, 진행 중인 이슈, 완료된 이슈를 볼 수 있습니다.
+- 사용자 상태별 현황을 그래프로 되어 있어 보기 편합니다.
+- DB Connection Pool 현황이나 DV세션 현황을 테이블로 볼 수 있습니다.
 
 ## Development Environment
-  - Spring
-  - mybatis
-  - lombok
-  - PostgreSQL
-  - PostGIS
-  - Gradle
+- Spring
+- mybatis
+- lombok
+- PostgreSQL
+- PostGIS
+- Gradle
 
 <br>
 
@@ -42,11 +42,11 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 - PostgreSQL9.6.3 최신버전으로 설정
 - 설치경로 C:/PostgreSQL <br>
   mago3d-core/src/doc/database/dbinit.bat 에서 설치 경로와 일치
-
+  
   
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
 - PostGIS 최신 SQL 버전으로 설정
-- 설치경로 C:/PostGIS<br>
+- 설치경로 C:/PostGIS
 
 
 #### [gradle](https://gradle.org/docs/)
@@ -117,11 +117,10 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
 
-
 <br><br>
 ---
+---
 <br><br>
-
 
 
 ###### Using Google Translator
@@ -170,7 +169,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
   
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
 - Set to latest SQL version of PostGIS
-- Installation path C:/PostGIS <br>
+- Installation path C:/PostGIS
 
 
 #### [gradle](https://gradle.org/docs/)
@@ -282,7 +281,7 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 #### [eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe)
 - eclipse Oxygen（neon以降のインストール）
 - eclipseを実行した後Project Import <br>
-  File - > import - > Gradle - > Existing Gradle Project
+  File → import → Gradle → Existing Gradle Project
 
 
 #### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%EB％93％9C)
@@ -293,13 +292,13 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
   
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98）
 - PostGIS最新のSQLバージョンに設定
-- インストールパスはC：/ PostGIS <br>
+- インストールパスはC：/ PostGIS
 
 
 #### [gradle](https://gradle.org/docs)
 - インストールパスはC：/ gradle
-- システム変数の追加<br>
-  Path）C：\ gradle \ gradle-4.1
+- システム変数の追加 <br>
+  Path) C:\gradle\gradle-4.1
 - eclipse BuildShip Gradle Pluginを使用してbuildします。
 
 
@@ -320,39 +319,39 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 
 
 - データの登録
-	- downloadしたソースの/ mago3d-core / src / doc / databaseフォルダに移動します。
-	- PostgreSQLでdatabaseフォルダにあるクエリを実行してくれます。 （windows自動実行scriptは開発中です。）<br>
+	- downloadしたソースの/mago3d-core/src/doc/databaseフォルダに移動します。
+	- PostgreSQLでdatabaseフォルダにあるクエリを実行してくれます。 (windows自動実行scriptは開発中です。) <br>
 	- ddlフォルダのsqlファイルを実行してtableを生成します。 <br>
 	  （table、table column comment多言語バージョンは開発中です。）
 	- ddlフォルダのsequence sql実行してsequence生成します。<br>
 	- index、triggerフォルダのsqlを実行して、indexとpartition生成します。<br>
 	- dmlフォルダのsqlを実行して、初期データ登録します。
 	- dbinit.batファイルを実行して、データを初期化します。<br>
-	  ex）C：\ git \ repository \ mago3d \ mago3d-core \ src \ doc \ database \ dbinit.bat実行
+	  ex) C:\git\repository\mago3d\mago3d-core\src\doc\database\dbinit.bat 実行
 
 
 ### 3. symbolic link
 
 - データリンク
 	- F4D Converterファイルをサービスするためのフォルダを指定します。 <br>
-	  ex）dataフォルダサブプロジェクトごとにディレクトリを作成して管理 → <code>C:\ data\プロジェクト名</code>
+	  ex）dataフォルダサブプロジェクトごとにディレクトリを作成して管理  → <code>C:\data\プロジェクト名</code>
 	- mago3d-userデータを格納するためのシンボリックリンク（symbolic link）をかけます。
-	- 管理者権限でCommand Line Prompt（cmd.exe）を実行
-	- mago3d-user \ src \ main \ webappディレクトリに移動
-	  <pre> <code> C：\ git \ repository \ mago3d \ mago3d-user \ src \ main \ webapp> mklink / d "C：\ git \ repository \ mago3d \ mago3d-user \ src \ main \ webapp \ data" "C：\ data" </ code> </ pre>
+	- 管理者権限でCommand Line Prompt(cmd.exe)を実行
+	- mago3d-user\src\main\webapp ディレクトリに移動
+	  <pre><code>C:\git\repository\mago3d\mago3d-user\src\main\webapp> mklink /d "C:\git\repository\mago3d\mago3d-user\src\main\webapp\data" "C:\data"</code></pre>
 	- ユーザーがデータをアップロードするフォルダを作成します。 <br>
 	  ex）Dドライブにmago3d \ dataフォルダの作成
-	  mago3d-admin \ src \ main \ resources \ mago3d.propertiesで変更可能
+	  mago3d-admin\src\main\resources\mago3d.properties で変更可能
 
 
 ### 4. Execution
-- mago3D-admin project spring boot実行<br>
-  url：http：// localhost（：port）/login/login.do
-<pre> <code> /mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java </ code> </ pre>
+- mago3D-admin project spring boot 実行 <br>
+  url: http://localhost(:port)/login/login.do
+<pre><code>/mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java</code></pre>
 
-- mago3D-user project spring boot実行<br>
-  url：http：//localhost/homepage/demo.do
-<pre> <code> /mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java </ code> </ pre>
+- mago3D-user project spring boot 実行 <br>
+  url: http://localhost/homepage/demo.do
+<pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
 
 
 
