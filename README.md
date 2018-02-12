@@ -94,13 +94,13 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 ### 3. Execution
 - mago3D-admin project spring boot 실행
 <pre><code>/mago3D-admin/src/main/java/com/gaia3d/mago3DAdminApplication.java</code></pre>
-url : http://localhost(:port)/login/login.do
+	- url : http://localhost(:port)/login/login.do
 - mago3D-user project spring boot 실행 <br>
 <pre><code>/mago3D-user/src/main/java/com/gaia3d/mago3DUserApplication.java</code></pre>
-url : http://localhost/homepage/demo.do
+	- url : http://localhost/homepage/demo.do
 - mago3DJS Node.js Application 실행
 <pre><code>/mago3djs/server.js</pre></code>
-url : http://localhost/sample/cesium.html
+	- url : http://localhost/sample/cesium.html
 
 
 ## github
