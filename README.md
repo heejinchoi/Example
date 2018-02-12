@@ -118,8 +118,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 
 
 <br><br>
----
----
+-----
 <br><br>
 
 
@@ -242,8 +241,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 
 <br><br>
----
----
+-----
 <br><br>
 
 
@@ -292,7 +290,7 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
   
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
 - PostGIS最新のSQLバージョンに設定
-- インストールパスはC：/ PostGIS
+- インストールパスはC:/ PostGIS
 
 
 #### [gradle](https://gradle.org/docs)
@@ -305,7 +303,7 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 #### [lombok](https://projectlombok.org/)
 - インストールした後にダウンロードフォルダの移動後に実行
 - eclipse設置位置[Specify location ..]を検索して「eclipse.exe」ファイルを選択します。
-- install / updateクリックします。
+- install/updateクリックします。
 
   
 ### 2. DBの作成と初期データの登録
