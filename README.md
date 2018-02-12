@@ -35,7 +35,7 @@ mago3DJS 3차원 다중 블록 가시화를 위한 오픈소스 자바스크립�
 #### [eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe)
 - eclipse Oxygen(neon버전 이상 설치)
 - eclipse를 실행 후 Project Import <br>
-  File -> import -> Gradle -> Existing Gradle Project
+  File → import → Gradle → Existing Gradle Project
 
 
 #### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%EB%93%9C)
@@ -158,13 +158,13 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 #### [eclipse](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R/eclipse-inst-win64.exe)
 - eclipse Oxygen (neon version or higher installed)
 - After running eclipse Project Import <br>
-  File -> import -> Gradle -> Existing Gradle Project
+  File → import → Gradle → Existing Gradle Project
 
 
 #### [PostgreSQL](https://github.com/Gaia3D/mago3d/wiki/PostgreSQL-%EC%84%A4%EC%B9%98-%EA%B0%80%EC%9D%B4%%EB93%9C)
 - Set PostgreSQL9.6.3 to the latest version
 - Installation path C: / PostgreSQL <br>
-  mago3d-core / src / doc / database / dbinit.bat matches the installation path
+  mago3d-core/src/doc/database/dbinit.bat matches the installation path
 
   
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
@@ -235,7 +235,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 - [mago3DJs](https://github.com/Gaia3D/mago3djs) is a feather hub site
 - [F4DConverter](https://github.com/Gaia3D/F4DConverter) This is the hub site.
 
-<br>
 
 ## License
 [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
@@ -243,6 +242,7 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 
 
 <br><br>
+---
 ---
 <br><br>
 
@@ -269,9 +269,9 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 - PostGIS
 - Gradle
 
-## Getting Started
-
 <br>
+
+## Getting Started
 
 ### 1. Install
 #### [java](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
@@ -290,7 +290,7 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
   mago3d-core / src / doc / database / dbinit.batでインストールパスと一致
 
   
-#### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98）
+#### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
 - PostGIS最新のSQLバージョンに設定
 - インストールパスはC：/ PostGIS
 
