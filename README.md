@@ -165,7 +165,6 @@ mago3DJS Integrate visualization data with open source JavaScript library for 3-
 - Installation path C:/PostgreSQL <br>
   mago3d-core/src/doc/database/dbinit.bat 에서 설치 경로와 일치
 
-  
 #### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
 - Set to latest SQL version of PostGIS
 - Installation path C:/PostGIS
@@ -287,8 +286,7 @@ mago3DJS 3次元マルチブロック可視化のためのオープンソース�
 - インストールパスは C:/PostgreSQL <br>
   mago3d-core/src/doc/database/dbinit.bat でインストールパスと一致
 
-  
-#### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98)
+#### [PostGIS](https://github.com/Gaia3D/mago3d/wiki/PostGIS-%EC%84%A4%EC%B9%98) 
 - PostGIS最新のSQLバージョンに設定
 - インストールパスは C:/PostGIS
 
