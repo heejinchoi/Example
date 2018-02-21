@@ -65,7 +65,7 @@ AEC(Architecture, Engineering, Construction) 영역과 전통적인 3차원 공�
 <br>※ F4D Conveter argument 관련 설명은 [F4D Conveter](https://github.com/Gaia3D/F4DConverter)참조<pre><code>C:\F4DConverter>F4DConverter.exe -inputFolder C:\demo_data -outputFolder C:\data\프로젝트명 -log C:\demo_data/logTest.txt -indexing y</code></pre>
 - 변환 완료된 F4D 파일들을 mago3D JS 프로젝트에서 웹 서비스로 사용할 수 있도록 Symbolic Link 생성
   - 관리자 권한으로 Command Line Prompt(cmd.exe)를 실행하고 mago3D JS 프로젝트로 이동
-  <code>C:\git\repository\mago3djs</code>
+  <code>C:\git\repository\mago3djs</code><br>
   <pre><code>C:\git\repository\mago3djs>mklink /d "C:\git\repository\mago3djs\data" "C:\data" 
   (삭제의 경우 rmdir data)
   </code></pre>
@@ -211,7 +211,7 @@ Generation 3D GIS platform that integrates and visualizes AEC (Architecture, Eng
 <br>※ For a description of F4D Conveter argument[F4D Conveter](https://github.com/Gaia3D/F4DConverter)<pre><code>C:\F4DConverter>F4DConverter.exe -inputFolder C:\demo_data -outputFolder C:\data\projectname -log C:\demo_data/logTest.txt -indexing y</code></pre>
 - Create Symbolic Link to use transformed F4D files as web service in mago3D JS project
   - Run Command Line Prompt (cmd.exe) with administrative privileges and go to mago3D JS project
-  <code>C:\mago3djs</code>
+  <code>C:\mago3djs</code><br>
   <pre><code>C:\mago3djs>mklink /d "C:\git\repository\mago3djs\data" "C:\data" 
   (delete is rmdir data)</code></pre>
 
@@ -358,7 +358,7 @@ AEC（Architecture、Engineering、Construction）領域と、伝統的な3次�
 <br>※ F4D Conveter argument 関連説明は[F4D Conveter](https://github.com/Gaia3D/F4DConverter)参照<pre><code>C:\F4DConverter>F4DConverter.exe -inputFolder C:\demo_data -outputFolder C:\data\プロジェクト名 -log C:\demo_data/logTest.txt -indexing y</code></pre>
 - 変換完了F4Dファイルをmago3D JSプロジェクトでは、Webサービスとして利用できるようにSymbolic Linkを作成
   - 管理者権限でCommand Line Prompt（cmd.exe）を実行して、mago3D JSプロジェクトに移動
-  <code>C:\mago3djs</code>
+  <code>C:\mago3djs</code><br>
   <pre><code>C:\mago3djs>mklink /d "C:\git\repository\mago3djs\data" "C:\data" 
   (削除の場合 rmdir data)</code></pre>
 
