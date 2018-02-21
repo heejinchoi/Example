@@ -210,7 +210,7 @@ Generation 3D GIS platform that integrates and visualizes AEC (Architecture, Eng
 - Run
 <br>※ For a description of F4D Conveter argument[F4D Conveter](https://github.com/Gaia3D/F4DConverter)<pre><code>C:\F4DConverter>F4DConverter.exe -inputFolder C:\demo_data -outputFolder C:\data\projectname -log C:\demo_data/logTest.txt -indexing y</code></pre>
 - Create Symbolic Link to use transformed F4D files as web service in mago3D JS project
-  - Run Command Line Prompt (cmd.exe) with administrative privileges and go to mago3D JS project
+  - Run Command Line Prompt (cmd.exe) with administrative privileges and go to mago3D JS project<br>
   <code>C:\mago3djs</code><br>
   <pre><code>C:\mago3djs>mklink /d "C:\git\repository\mago3djs\data" "C:\data" 
   (delete is rmdir data)</code></pre>
@@ -293,7 +293,6 @@ http:localhost/sample/worldwind.html</code></pre>
 <br><br>
 
 
-準備中です。
 ###### Googleの翻訳を使用して
 # mago3DJS
 3次元マルチブロック可視化のためのオープンソースのJavaScriptライブラリ
@@ -357,7 +356,7 @@ AEC（Architecture、Engineering、Construction）領域と、伝統的な3次�
 - 次を実行し
 <br>※ F4D Conveter argument 関連説明は[F4D Conveter](https://github.com/Gaia3D/F4DConverter)参照<pre><code>C:\F4DConverter>F4DConverter.exe -inputFolder C:\demo_data -outputFolder C:\data\プロジェクト名 -log C:\demo_data/logTest.txt -indexing y</code></pre>
 - 変換完了F4Dファイルをmago3D JSプロジェクトでは、Webサービスとして利用できるようにSymbolic Linkを作成
-  - 管理者権限でCommand Line Prompt（cmd.exe）を実行して、mago3D JSプロジェクトに移動
+  - 管理者権限でCommand Line Prompt（cmd.exe）を実行して、mago3D JSプロジェクトに移動<br>
   <code>C:\mago3djs</code><br>
   <pre><code>C:\mago3djs>mklink /d "C:\git\repository\mago3djs\data" "C:\data" 
   (削除の場合 rmdir data)</code></pre>
@@ -433,3 +432,5 @@ http:localhost/sample/worldwind.html</code></pre>
 
 ## LICENSE ##
 [Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+
+<br><br>
