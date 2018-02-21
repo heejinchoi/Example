@@ -73,7 +73,7 @@ AEC(Architecture, Engineering, Construction) 영역과 전통적인 3차원 공�
 ### 6. 설정 파일 수정
 두 가지의 설정파일을 수정한다. (data.json, policy.json)
 #### data.json
-- 크게 세가지 영역으로 나눠진다. 속성값을 저장하는 attributes, 자식 노드 정보를 저장하는 children 그외 위치 정보를 저장하는 영역
+- 크게 세가지 영역으로 나눠진다. 속성값을 저장하는 attributes, 자식 노드 정보를 저장하는 children, 그외 위치 정보를 저장하는 영역
 - attributes 영역의 isPhysical 속성은 데이터 표시 여부를 체크하는 필수 속성
 - json의 root 노드의 data_key는 data 폴더 아래 프로젝트명과 일치
 <pre><code>{
@@ -219,6 +219,7 @@ Generation 3D GIS platform that integrates and visualizes AEC (Architecture, Eng
 Add two configuration files. (data.json, policy.json)
 #### data.json
 - It is divided into three major areas. Attributes to store attribute values, children to store child node information, other area to store location information
+- The isPhysical attribute of the - attributes field is a mandatory attribute
 - The data_key of the root node of json matches the project name under the data folder
 <pre><code>{
     //attributes area
@@ -242,8 +243,8 @@ Add two configuration files. (data.json, policy.json)
 "children" : [
    {
      "attributes" : {
-     "isPhysical" : true,
-     "nodeType" : "..."
+       "isPhysical" : true,
+       "nodeType" : "..."
      },
      "children" : [
      ],
@@ -364,7 +365,8 @@ AEC（Architecture、Engineering、Construction）領域と、伝統的な3次�
 ### 6. 設定ファイルを変更する
 二種類の設定ファイルを追加します。 (data.json, policy.json)
 #### data.json
-- 大きく3つのエリアに分けられる。属性値を格納するattributes、子ノードの情報を格納するchildrenその他の位置情報を格納する領域
+- 大きく3つのエリアに分けられる。属性値を格納するattributes、子ノードの情報を格納するchildren、その他の位置情報を格納する領域
+- attributes領域のisPhysicalプロパティは、データを表示するかどうかをチェックする必須属性
 - jsonのrootノードのdata_keyはdataフォルダの下のプロジェクト名と一致
 <pre><code>{
     //attributes領域
@@ -388,8 +390,8 @@ AEC（Architecture、Engineering、Construction）領域と、伝統的な3次�
 "children" : [
    {
      "attributes" : {
-     "isPhysical" : true,
-     "nodeType" : "..."
+       "isPhysical" : true,
+       "nodeType" : "..."
      },
      "children" : [
      ],
