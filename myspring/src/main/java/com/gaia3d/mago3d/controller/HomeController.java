@@ -1,4 +1,4 @@
-package com.gaia3d.mago3d;
+package com.gaia3d.mago3d.controller;
 
 import java.text.DateFormat;
 import java.util.Date;

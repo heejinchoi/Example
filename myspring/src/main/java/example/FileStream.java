@@ -1,10 +1,10 @@
-package FileNameJson;
+package example;
 
 import java.io.File;
 
 public class FileStream {
 	public static void main(String[] args) {
-		String path="C:\\Users\\h2jin\\Desktop\\DATA_Property\\ifc_japan";
+		String path="C:\\DATA_Property\\ifc_japan";
 		File dir = new File(path);
 		File[] fileList = dir.listFiles();
 		

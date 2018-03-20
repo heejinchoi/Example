@@ -1,4 +1,4 @@
-package FileNameJson;
+package example;
 
 import java.io.File;
 import java.io.FileWriter;
