@@ -2,13 +2,18 @@ package com.gaia3d.mago3d.parser;
 
 import static org.junit.Assert.*;
 
-import java.io.File;
 import java.util.List;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class JsonFactoryTest {
-
+	
+	@Before
+	public void 모든메소드에서실행() {
+		System.out.println("실행되었다.");
+	}
+	
 	@Test
 	public void 디렉토리_매개변수_테스트() {
 		JsonFactory jsonFactory = new JsonFactory();
@@ -30,7 +35,7 @@ public class JsonFactoryTest {
 		
 		System.out.println("ifc 파일은 " + StringJson.size() + "개 입니다.");
 		if(!StringJson.isEmpty()) {
-			System.out.println(StringJson);
+			System.out.println("스트링 리스트 Json: " + StringJson);
 		}
 	}
 	
@@ -45,11 +50,31 @@ public class JsonFactoryTest {
 		
 		List<String> StringJson = jsonFactory.makeJson(fileNameList);
 		
-		if(!StringJson.isEmpty()) {
-			System.out.println(StringJson);
-		}
-		
 		jsonFactory.fileWriter(outputDirectory, StringJson);
+	}
+	
+	@Test
+	public void 스프링버퍼() {
+		JsonFactory jsonFactory = new JsonFactory();
+		
+		String directory = "C:\\DATA_Property\\ifc_cultural_assets";
+		List<String> fileNameList = jsonFactory.getFileNames(directory);
+		
+		StringBuffer sb = jsonFactory.makeJsonStringBuffer(fileNameList);
+		System.out.println("스트링 버퍼 Json: " + sb);
 		
 	}
+	
+	
+	@Test
+	public void 상위디렉토리() {
+		JsonFactory jsonFactory = new JsonFactory();
+		
+		String directory = "C:\\DATA_Property\\ifc_cultural_assets";
+		jsonFactory.parentDirectory(directory);
+
+	}
+	
+	
+	
 }

@@ -4,7 +4,15 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.StringTokenizer;
+
+import javax.swing.filechooser.FileNameExtensionFilter;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 /**
@@ -12,8 +20,7 @@ import java.util.List;
  *
  */
 public class JsonFactory {
-	
-	
+
 	/**
 	 * 특정 디렉토리의 파일명을 읽어서 리스트 형태로 리턴하는 메소드
 	 * @param directory
@@ -35,7 +42,7 @@ public class JsonFactory {
 			
 			if(fileName.isEmpty()) continue;
 			
-			int index = fileName.indexOf(".");
+			int index = fileName.lastIndexOf(".");
 			fileName = fileName.substring(0, index);
 			fileNameList.add(fileName);
 		}
@@ -54,8 +61,8 @@ public class JsonFactory {
 		// data_key 값을 fileNameList의 값으로 지정한다.
 		
 		List<String> StringJson = new ArrayList<>();
-		
-		for(int i=0; i<fileNameList.size(); i++) {
+		int count = fileNameList.size();
+		for(int i=0; i<count; i++) {
 			
 			String json = "";
 			json = json + "{";
@@ -82,15 +89,73 @@ public class JsonFactory {
 				FileWriter file = new FileWriter(outputDirectory + "test1.json");
 			) {
 			file.write(StringJson.toString());
-			file.flush();
-			file.close();
 			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 	
-
+	/**
+	 * 스트링 버퍼로 Json 만드는 메소드
+	 * @param fileNameList
+	 * @return
+	 */
+	public StringBuffer makeJsonStringBuffer(List<String> fileNameList) {
+		StringBuffer sb = new StringBuffer();
+		
+		int count = fileNameList.size();
+		for(int i=0; i<count; i++) {
+			sb.append("{");
+			sb.append("\"data_key\" : \"" + fileNameList.get(i) + "\", ");
+			sb.append("\"latitude\" : \"36.4457935\", ");
+			sb.append("\"longitude\" : \"126.586641\", ");
+			sb.append("\"heading\" : \"0\", ");
+			sb.append("\"pitch\" : \"0\", ");
+			sb.append("\"roll\" : \"0\"");
+			sb.append("}");
+		}
+		return sb;
+	}
+	
+	/**
+	 * 상위 디렉토리 폴더명 구하는 메소드
+	 * @param directory
+	 */
+	public void parentDirectory(String directory) {
+		
+		File fileDirectory = new File(directory);
+		File[] fileArray = fileDirectory.listFiles();
+		
+		String parentFileDirectoryPath = null;
+		for(File file : fileArray) {
+			parentFileDirectoryPath = file.getParent();
+		}
+		System.out.println("부모 디렉토리 패스: " + parentFileDirectoryPath);
+		
+		StringTokenizer st = new StringTokenizer(parentFileDirectoryPath, "\\");
+		String parentFileDirectoryName = null;
+		while(st.hasMoreTokens()) {
+			parentFileDirectoryName = st.nextToken();
+		}
+		System.out.println("부모 디렉토리명: " + parentFileDirectoryName);
+	}
+	
+	
+	public Map<String, Object> makeJsonJackson(String directory) {
+		Map<String, Object> jsonObject = new HashMap<>();
+		Map<String, Object> jsonSubObject = null;
+		ArrayList<Map<String, Object>> jsonList = new ArrayList<>();
+		
+		
+		
+		
+		ObjectMapper mapper = new ObjectMapper();
+		
+//		JsonNode rootNode = mapper.readTree(content);
+		
+		return null;
+	}
+	
 	
 	
 	
