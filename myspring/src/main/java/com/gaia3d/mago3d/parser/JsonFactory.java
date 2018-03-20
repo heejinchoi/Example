@@ -7,9 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * @author HJCHOI
+ *
+ */
 public class JsonFactory {
 	
-	//특정 디렉토리의 파일명을 읽어서 리스트 형태로 리턴하는 메소드
+	
+	/**
+	 * 특정 디렉토리의 파일명을 읽어서 리스트 형태로 리턴하는 메소드
+	 * @param directory
+	 * @return
+	 */
 	public List<String> getFileNames(String directory) {
 		// 특정 디렉토리를 매개변수로 받아온다.
 		// 디렉토리가 올바른지 체크한다.
@@ -17,25 +26,28 @@ public class JsonFactory {
 		
 		List<String> fileNameList = new ArrayList<>();
 
-		File file = new File(directory);
-		if(file.exists()) {
-			File[] fileList = file.listFiles();
+		File fileDirectory = new File(directory);
+		if(!fileDirectory.exists()) return fileNameList;
+		
+		File[] fileArray = fileDirectory.listFiles();
+		for(File file : fileArray) {
+			String fileName = file.getName();
 			
-			for(int i=0; i<fileList.length; i++) {
-				String fileName = fileList[i].getName();
-				
-				//확장자 저장하지 않음
-				if(!fileName.isEmpty()) {
-					int index = fileName.indexOf(".");
-					fileName = fileName.substring(0, index);
-					fileNameList.add(fileName);
-				}
-			}
+			if(fileName.isEmpty()) continue;
+			
+			int index = fileName.indexOf(".");
+			fileName = fileName.substring(0, index);
+			fileNameList.add(fileName);
 		}
+		
 		return fileNameList;
 	}
 	
-	//문자열로 json을 만드는 메소드
+	/**
+	 * 문자열로 json을 만드는 메소드
+	 * @param fileNameList
+	 * @return
+	 */
 	public List<String> makeJson(List<String> fileNameList) {
 		// 매개변수로 받은 리스트의 갯수만큼 반복문을 실행한다.
 		// 라이브러리를 사용하지 않고 String 으로 json을 만들어 본다.
@@ -60,10 +72,15 @@ public class JsonFactory {
 		return StringJson;
 	}
 	
-	//json 파일을 생성하는 메소드
+	/**
+	 * json 파일을 생성하는 메소드
+	 * @param outputDirectory
+	 * @param StringJson
+	 */
 	public void fileWriter(String outputDirectory, List<String> StringJson) {
-		try {
-			FileWriter file = new FileWriter(outputDirectory + "1.json");
+		try (
+				FileWriter file = new FileWriter(outputDirectory + "test1.json");
+			) {
 			file.write(StringJson.toString());
 			file.flush();
 			file.close();
@@ -73,9 +90,12 @@ public class JsonFactory {
 		}
 	}
 	
-	
-	
-	
-	
 
+	
+	
+	
+	
+	
+	
+	
 }
