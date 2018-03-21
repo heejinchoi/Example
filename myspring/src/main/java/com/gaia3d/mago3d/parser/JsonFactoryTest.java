@@ -31,7 +31,7 @@ public class JsonFactoryTest {
 		String directory = "C:\\DATA_Property\\ifc";
 		List<String> fileNameList = jsonFactory.getFileNames(directory);
 		
-		List<String> StringJson = jsonFactory.makeJson(fileNameList);		
+		List<String> StringJson = jsonFactory.makeJsonString(fileNameList);		
 		
 		System.out.println("ifc 파일은 " + StringJson.size() + "개 입니다.");
 		if(!StringJson.isEmpty()) {
@@ -43,12 +43,23 @@ public class JsonFactoryTest {
 	public void Json_파일_생성_String() {
 		JsonFactory jsonFactory = new JsonFactory();
 		
-		String outputDirectory = "C:\\DATA_Property\\json\\";
+		String outputDirectory = "C:\\DATA_Property\\json\\test6.json";
 		
 		String directory = "C:\\DATA_Property\\ifc";
 		List<String> fileNameList = jsonFactory.getFileNames(directory);
 		
-		jsonFactory.fileWriter(directory, outputDirectory, fileNameList);
+		jsonFactory.stringFileWriter(directory, outputDirectory, fileNameList);
+	}
+	
+	@Test
+	public void 파일_생성_String_for문(){
+		JsonFactory jsonFactory = new JsonFactory();
+		
+		String directory = "C:\\DATA_Property\\ifc";
+		String outputDirectory = "C:\\DATA_Property\\json\\test7.json";
+		List<String> fileNameList = jsonFactory.getFileNames(directory);
+		
+		jsonFactory.StringWriteJsonFile(outputDirectory, fileNameList);
 	}
 	
 	@Test
@@ -70,13 +81,23 @@ public class JsonFactoryTest {
 	public void Json_파일_생성_StringBuffer() {
 		JsonFactory jsonFactory = new JsonFactory();
 		
-		String outputDirectory = "C:\\DATA_Property\\json\\";
+		String outputDirectory = "C:\\DATA_Property\\json\\test8.json";
 		
 		String directory = "C:\\DATA_Property\\ifc";
 		List<String> fileNameList = jsonFactory.getFileNames(directory);
 		
 		jsonFactory.StringBufferFileWriter(directory, outputDirectory, fileNameList);
-		System.out.println("StringBuffer로 만든 json 생성 완료");
+	}
+	
+	@Test
+	public void 파일_생성_StringBuffer_for문(){
+		JsonFactory jsonFactory = new JsonFactory();
+
+		String directory = "C:\\DATA_Property\\ifc";
+		String outputDirectory = "C:\\DATA_Property\\json\\test9.json";
+		List<String> fileNameList = jsonFactory.getFileNames(directory);
+		
+		jsonFactory.StringBufferWriteJsonFile(outputDirectory, fileNameList);
 	}
 	
 	@Test
