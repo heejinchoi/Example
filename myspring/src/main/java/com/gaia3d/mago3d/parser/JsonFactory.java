@@ -13,6 +13,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ser.std.StaticListSerializerBase;
 
 
 /**
@@ -60,9 +61,8 @@ public class JsonFactory {
 		// 라이브러리를 사용하지 않고 String 으로 json을 만들어 본다.
 		// data_key 값을 fileNameList의 값으로 지정한다.
 		
-		List<String> StringJson = new ArrayList<>();
-		int count = fileNameList.size();
-		for(int i=0; i<count; i++) {
+		List<String> resultJson = new ArrayList<>();
+		for(int i=0; i<fileNameList.size(); i++) {
 			
 			String json = "";
 			json = json + "{";
@@ -74,24 +74,28 @@ public class JsonFactory {
 			json = json + "\"roll\" : \"0\"";
 			json = json + "}";
 			
-			StringJson.add(json);
+			resultJson.add(json); 
 		}
-		return StringJson;
+		return resultJson;
 	}
 	
 	/**
-	 * json 파일을 생성하는 메소드
+	 * json 파일을 생성하는 메소드 - String
 	 * @param outputDirectory
 	 * @param StringJson
 	 */
-	public void fileWriter(String outputDirectory, List<String> StringJson) {
-		try (
-				FileWriter file = new FileWriter(outputDirectory + "test1.json");
-			) {
-			file.write(StringJson.toString());
-			
-		} catch (IOException e) {
-			e.printStackTrace();
+	public void fileWriter(String directory, String outputDirectory, List<String> fileNameList) {
+		fileNameList = getFileNames(directory);
+		
+		int count = fileNameList.size();
+		for(int i=0; i<count; i++) {
+			List<String> resultJson = makeJson(fileNameList);
+
+			try (FileWriter file = new FileWriter(outputDirectory + "test3.json")) {
+				file.write(resultJson.toString());		
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 	
@@ -100,10 +104,11 @@ public class JsonFactory {
 	 * @param fileNameList
 	 * @return
 	 */
-	public StringBuffer makeJsonStringBuffer(List<String> fileNameList) {
+	public String makeJsonStringBuffer(List<String> fileNameList) {
 		StringBuffer sb = new StringBuffer();
 		
 		int count = fileNameList.size();
+		sb.append("[");
 		for(int i=0; i<count; i++) {
 			sb.append("{");
 			sb.append("\"data_key\" : \"" + fileNameList.get(i) + "\", ");
@@ -112,9 +117,36 @@ public class JsonFactory {
 			sb.append("\"heading\" : \"0\", ");
 			sb.append("\"pitch\" : \"0\", ");
 			sb.append("\"roll\" : \"0\"");
-			sb.append("}");
+			if(fileNameList.size()-1 != count) {
+				sb.append("}, ");
+			}else if(fileNameList.size()-1 == count) {
+				sb.append("}");
+			}
 		}
-		return sb;
+		sb.append("]");
+		String stringbuffer = sb.toString();
+		
+		return stringbuffer;
+	}
+	
+
+	/**
+	 * json 파일을 생성하는 메소드 - StringBuffer
+	 * @param directory
+	 * @param outputDirectory
+	 * @param fileNameList
+	 */
+	public void StringBufferFileWriter(String directory, String outputDirectory, List<String> fileNameList) {
+		fileNameList = getFileNames(directory);
+		
+		String resultJson = makeJsonStringBuffer(fileNameList);
+
+		try (FileWriter file = new FileWriter(outputDirectory + "test5.json")) {
+			file.write(resultJson);		
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+			
 	}
 	
 	/**
@@ -142,6 +174,8 @@ public class JsonFactory {
 	
 	
 	public Map<String, Object> makeJsonJackson(String directory) {
+		//jackson 라이브러리를 이용해서 json 만들기
+		//object -> json
 		Map<String, Object> jsonObject = new HashMap<>();
 		Map<String, Object> jsonSubObject = null;
 		ArrayList<Map<String, Object>> jsonList = new ArrayList<>();
@@ -150,10 +184,21 @@ public class JsonFactory {
 		
 		
 		ObjectMapper mapper = new ObjectMapper();
+		Data data = new Data();
+		try {
+			mapper.writeValue(new File("C:\\DATA_Property\\json\\jackson.json"), data);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 //		JsonNode rootNode = mapper.readTree(content);
 		
 		return null;
+	}
+
+	@Override
+	public String toString() {
+		return super.toString();
 	}
 	
 	
