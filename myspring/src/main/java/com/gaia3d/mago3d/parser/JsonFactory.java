@@ -4,16 +4,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.StringTokenizer;
-
-import javax.swing.filechooser.FileNameExtensionFilter;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ser.std.StaticListSerializerBase;
 
 
 /**
@@ -47,7 +39,6 @@ public class JsonFactory {
 			fileName = fileName.substring(0, index);
 			fileNameList.add(fileName);
 		}
-		
 		return fileNameList;
 	}
 	
@@ -156,7 +147,6 @@ public class JsonFactory {
 		return sb.toString();
 	}
 	
-
 	/**
 	 * json 파일을 생성하는 메소드 - makeJsonStringBuffer()로 얻은 스트링값을 매개변수로 전달
 	 * @param directory
@@ -201,7 +191,6 @@ public class JsonFactory {
 		}catch(Exception e) {
 			
 		}
-		
 	}
 	
 	/**
@@ -228,33 +217,8 @@ public class JsonFactory {
 	}
 	
 	
-	public Map<String, Object> makeJsonJackson(String directory) {
-		//jackson 라이브러리를 이용해서 json 만들기
-		//object -> json
-		Map<String, Object> jsonObject = new HashMap<>();
-		Map<String, Object> jsonSubObject = null;
-		List<Map<String, Object>> jsonList = new ArrayList<>();
-		
-		
-		
-		
-		ObjectMapper mapper = new ObjectMapper();
-		Data data = new Data();
-		try {
-			mapper.writeValue(new File("C:\\DATA_Property\\json\\jackson.json"), data);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		
-//		JsonNode rootNode = mapper.readTree(content);
-		
-		return null;
-	}
+	
 
-	@Override
-	public String toString() {
-		return super.toString();
-	}
 	
 	
 	

@@ -12,6 +12,7 @@
 		<org.springframework-version>3.1.1.RELEASE</org.springframework-version>
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
+		<jackson.version>2.9.3</jackson.version>
 	</properties>
 	<dependencies>
 
@@ -19,28 +20,21 @@
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-annotations</artifactId>
-		    <version>2.9.3</version>
+		    <version>${jackson.version}</version>
 		</dependency>
 	
 		<!-- jackson-core -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-core</artifactId>
-		    <version>2.9.4</version>
+		    <version>${jackson.version}</version>
 		</dependency>
 
 		<!-- jackson-databind -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-databind</artifactId>
-		    <version>2.9.3</version>
-		</dependency>
-	
-		<!-- JSON -->
-		<dependency>
-			<groupId>com.googlecode.json-simple</groupId>
-			<artifactId>json-simple</artifactId>
-			<version>1.1</version>
+		    <version>${jackson.version}</version>
 		</dependency>
 	
 		<!-- Spring -->

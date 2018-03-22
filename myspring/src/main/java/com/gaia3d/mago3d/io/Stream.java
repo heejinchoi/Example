@@ -2,6 +2,7 @@ package com.gaia3d.mago3d.io;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,10 +13,16 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.Reader;
 import java.io.Writer;
+import java.util.ArrayList;
+import java.util.List;
 
-import org.springframework.instrument.classloading.ShadowingClassLoader;
+import com.gaia3d.mago3d.parser.JsonFactory;
 
 
+/**
+ * @author HJCHOI
+ *
+ */
 public class Stream {
 		
 	/**
@@ -41,7 +48,6 @@ public class Stream {
 			e.printStackTrace();
 		} 
 	}
-	
 	
 	/**
 	 * 문자기반 스트림(Reader/Writer)
@@ -98,6 +104,55 @@ public class Stream {
 		}
 	}
 	
+	public void createJsonStream(String directory, String writeDirectory) {
+		//디렉토리 파일명을 읽어들인다.
+		//BufferedStream을 이용해서 json 형태로 만든다.
+		//json 파일을 생성한다.
+		
+		List<String> fileNameList = new ArrayList<>();
+		
+		File fileDirectory = new File(directory);
+		if(fileDirectory.exists()) {
+			
+			File[] fileList = fileDirectory.listFiles();
+			for(File file : fileList) {
+				String fileName = file.getName();
+	
+				if(fileName.isEmpty()) continue;
+			
+				String dataKeyName = fileName.substring(0, fileName.indexOf("."));
+				System.out.println("데이터명: " + dataKeyName);
+				
+				if(dataKeyName.isEmpty()) continue;
+				
+				fileNameList.add(dataKeyName);
+			}
+		}
+		
+		try(FileWriter file = new FileWriter(writeDirectory)) {
+			
+			for(String fileName : fileNameList) {
+				String json = ""
+						+ "{"
+						+ "\"data_key\" : \"" + fileName + "\", "
+						+ "\"latitude\" : \"36.4457935\", "
+						+ "\"longitude\" : \"126.586641\", "
+						+ "\"heading\" : \"0\", "
+						+ "\"pitch\" : \"0\", "
+						+ "\"roll\" : \"0\""		
+						+ "}";
+				if(fileName != fileNameList.get(fileNameList.size()-1)) {
+					json += ",";
+				} 
+				file.write(json);
+			}
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
 	
 	
 	
