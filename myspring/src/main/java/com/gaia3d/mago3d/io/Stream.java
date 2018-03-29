@@ -104,11 +104,15 @@ public class Stream {
 		}
 	}
 	
+	/**
+	 * 스트림으로 json생성
+	 * @param directory
+	 * @param writeDirectory
+	 */
 	public void createJsonStream(String directory, String writeDirectory) {
 		//디렉토리 파일명을 읽어들인다.
 		//BufferedStream을 이용해서 json 형태로 만든다.
 		//json 파일을 생성한다.
-		
 		List<String> fileNameList = new ArrayList<>();
 		
 		File fileDirectory = new File(directory);
@@ -117,41 +121,33 @@ public class Stream {
 			File[] fileList = fileDirectory.listFiles();
 			for(File file : fileList) {
 				String fileName = file.getName();
-	
-				if(fileName.isEmpty()) continue;
-			
-				String dataKeyName = fileName.substring(0, fileName.indexOf("."));
+				
+				String dataKeyName = fileName.substring(0, fileName.lastIndexOf("."));
 				System.out.println("데이터명: " + dataKeyName);
 				
-				if(dataKeyName.isEmpty()) continue;
+				try(FileWriter outputFile = new FileWriter(writeDirectory)) {
+					
+					String json = "{"
+							+ "\"data_key\" : \"" + fileName + "\", "
+							+ "\"latitude\" : \"36.4457935\", "
+							+ "\"longitude\" : \"126.586641\", "
+							+ "\"heading\" : \"0\", "
+							+ "\"pitch\" : \"0\", "
+							+ "\"roll\" : \"0\""		
+							+ "}";
+					if(fileName != fileNameList.get(fileNameList.size()-1)) {
+						json += ",";
+					}
+					outputFile.write(json);
 				
-				fileNameList.add(dataKeyName);
+				} catch(Exception e) {
+					e.printStackTrace();
+				}
 			}
 		}
-		
-		try(FileWriter file = new FileWriter(writeDirectory)) {
-			
-			for(String fileName : fileNameList) {
-				String json = ""
-						+ "{"
-						+ "\"data_key\" : \"" + fileName + "\", "
-						+ "\"latitude\" : \"36.4457935\", "
-						+ "\"longitude\" : \"126.586641\", "
-						+ "\"heading\" : \"0\", "
-						+ "\"pitch\" : \"0\", "
-						+ "\"roll\" : \"0\""		
-						+ "}";
-				if(fileName != fileNameList.get(fileNameList.size()-1)) {
-					json += ",";
-				} 
-				file.write(json);
-			}
-		} catch(Exception e) {
-			e.printStackTrace();
+		else {
+			System.out.println("해당 경로에 파일이 없습니다.");
 		}
-		
-		
-		
 	}
 	
 	

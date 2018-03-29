@@ -78,14 +78,11 @@ public class StreamTest {
 			File[] fileList = fileDirectory.listFiles();
 			for(File file : fileList) {
 				String fileName = file.getName();
-				System.out.println(fileName);
 				
 				if(fileName.isEmpty()) continue;
 				
 				int index = fileName.lastIndexOf(".");
-				System.out.println("index=" + index);
 				String result = fileName.substring(index, fileName.length());
-				System.out.println("result=" + result);
 
 //				String extension = fileName.split(".")[fileList.length];
 //				assertEquals("txt", extension);

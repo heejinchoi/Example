@@ -24,7 +24,7 @@ public class JsonFactoryLibraryTest {
 	@Test
 	public void jackson() throws IOException {
 		JsonFactoryLibrary jsonFactoryLibrary = new JsonFactoryLibrary();
-		jsonFactoryLibrary.makeJsonJackson("C:\\DATA_Property\\json\\test9.json");
+		jsonFactoryLibrary.makeJsonJackson("C:\\DATA_Property\\ifc");
 
 		
 		
