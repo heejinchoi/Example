@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.co.gaia3d.persistence.UserMapper">
+
+	<!-- 사용자 조회 -->
+	<select id="getUser" parameterType="user" resultType="user">
+		/* getUser */
+		SELECT * FROM user_register
+	</select>
+	
+	<!-- 전체 사용자 조회 -->
+	<select id="getListUser" parameterType="user" resultType="user">
+		/* getListUser */
+		SELECT * FROM user_register
+	</select>
+
+	<!-- 사용자 등록 -->
+	<insert id="insertUser" parameterType="user">
+		/* insertUser */
+		INSERT INTO user_register (
+			userType, userId, password, userName, gender, mobile, email, contents) 
+			values(#{userType}, #{userId}, #{password}, #{userName}, #{gender}, #{mobile}, #{email}, #{contents})
+	</insert>
+	
+	
+	
+</mapper>
