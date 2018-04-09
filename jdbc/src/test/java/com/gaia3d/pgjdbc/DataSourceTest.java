@@ -1,9 +1,10 @@
-package com.gaia3d.jdbc;
+package com.gaia3d.pgjdbc;
+
+import java.sql.Connection;
 
 import javax.inject.Inject;
+import javax.sql.DataSource;
 
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -11,22 +12,20 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations= {"file:src/main/webapp/WEB-INF/spring/**/root-context.xml"})
-public class MyBatisTest {
+public class DataSourceTest {
 
 	@Inject
-	private SqlSessionFactory sqlFactory;
+	private DataSource ds;
 	
 	@Test
-	public void 마이바티스설정() {
-		System.out.println(sqlFactory);
-	}
-	
-	@Test
-	public void 세션설정() {
-		try(SqlSession session = sqlFactory.openSession()) {
-			System.out.println(session);
+	public void 커넥션객체생성() throws Exception {
+		
+		try(Connection con = ds.getConnection()) {
+			System.out.println(con);
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
+	
+	
 }

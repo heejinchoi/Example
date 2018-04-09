@@ -1,4 +1,4 @@
-package com.gaia3d.jdbc;
+package com.gaia3d.pgjdbc;
 
 import javax.inject.Inject;
 
