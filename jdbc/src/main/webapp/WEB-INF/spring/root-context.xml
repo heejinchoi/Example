@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	
+	<!-- PostgreSQL JDBC setting -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource" >
+		<property name="driverClass" value="org.postgresql.Driver" />
+		<property name="url" value="$jdbc:postgresql://192.168.0.1:5432/TestDB" />
+		<property name="username" value="postgres" />
+		<property name="password" value="postgres" />
+	</bean>		
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean" >
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:com/myproject/myapp/mybatisConfig/mybatis-config.xml"/>
+	</bean>
+
+		
+</beans>
