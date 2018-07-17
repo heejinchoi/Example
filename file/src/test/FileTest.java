@@ -4,8 +4,8 @@ package com.gaia3d.controller.board;
 import java.io.File;
 import java.util.Date;
 
-import org.junit.Before;
 import org.junit.Test;
+import org.springframework.web.multipart.MultipartFile;
 
 public class FileTest {
 	private String pathName = "C:\\Users\\HJCHOI\\Desktop\\TEST";
@@ -61,10 +61,6 @@ public class FileTest {
 		System.out.println("Path = " + file.getPath());
 		System.out.println("Parent = " + file.getParent() + "\n");
 	}
-	
-
-	
-	
 	
 
 
