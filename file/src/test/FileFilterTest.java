@@ -1,6 +1,4 @@
-package test;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.gaia3d.controller.board;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -15,10 +13,10 @@ public class FileFilterTest implements FileFilter {
 
 	@Test
 	public void test() {
-		//파일 suffix 체크
+		// 파일 suffix 체크
 		accept(file);
 		
-		//파일 목록 조회
+		// 파일 목록 조회
 		checkList(pathName);
 	}
 

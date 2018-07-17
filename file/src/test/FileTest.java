@@ -1,6 +1,4 @@
-package test;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.gaia3d.controller.board;
 
 
 import java.io.File;

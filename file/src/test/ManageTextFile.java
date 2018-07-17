@@ -1,6 +1,4 @@
-package test;
-
-import static org.junit.jupiter.api.Assertions.*;
+package com.gaia3d.controller.board;
 
 import static java.io.File.separator;
 
@@ -28,7 +26,7 @@ public class ManageTextFile {
 		readFileWithScanner(fullPath);
 	}
 	
-	//텍스트 파일 쓰기
+	// 텍스트 파일 쓰기
 	private void writerFile(String fileName , int numberCount) {
 		FileWriter fileWriter = null;
 		BufferedWriter bufferedWriter = null;
@@ -62,7 +60,7 @@ public class ManageTextFile {
 		}
 	}
 	
-	//텍스트 파일 읽기
+	// 텍스트 파일 읽기
 	private void readFile(String fileName) {
 		FileReader fileReader = null;
 		BufferedReader bufferedReader = null;
@@ -96,11 +94,12 @@ public class ManageTextFile {
 		}
 	}
 	
-	//파일 스캔
+	// 파일 스캔
 	private void readFileWithScanner(String fileName) {
+		File file = new File(fileName);
+		Scanner scanner = null;
 		try {
-			File file = new File(fileName);
-			Scanner scanner = new Scanner(file);
+			scanner = new Scanner(file);
 			
 			while(scanner.hasNextLine()) {
 				System.out.println(scanner.nextLine());
@@ -110,6 +109,10 @@ public class ManageTextFile {
 			fnfe.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			if(scanner != null) {
+				scanner.close();
+			}
 		}
 	}
 
